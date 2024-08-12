@@ -1,4 +1,5 @@
 import '../css/global.css';
+
 import '../scss/global.scss';
 
 import Three from './three';
@@ -12,3 +13,4 @@ window.addEventListener('load', () => {
     new Three(document.querySelector('#canvas'));
   }
 });
+
