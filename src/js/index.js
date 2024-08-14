@@ -1,16 +1,17 @@
-import '../css/global.css';
+import "../css/global.css";
 
-import '../scss/global.scss';
+import "../scss/global.scss";
 
-import Three from './three';
+import Three from "./three";
 
-document.addEventListener('DOMContentLoaded', () => {});
+document.addEventListener("DOMContentLoaded", () => {});
 
-window.addEventListener('load', () => {
-  const canvas = document.querySelector('#canvas');
+window.addEventListener("load", () => {
+  let canvas2D = document.createElement("canvas");
 
-  if (canvas) {
-    new Three(document.querySelector('#canvas'));
+  if (canvas2D) {
+    new Three(canvas2D);
+
+    document.body.appendChild(canvas2D);
   }
 });
-
